@@ -1,0 +1,54 @@
+﻿Source,Type,Target
+attack-pattern,delivers,malware
+attack-pattern,targets,"identity, location, vulnerability"
+attack-pattern,uses,"malware, tool"
+campaign,attributed-to,"intrusion-set, threat-actor"
+campaign,compromises,infrastructure
+campaign,originates-from,location
+campaign,targets,"identity, location, vulnerability"
+campaign,uses,"attack-pattern, infrastructure, malware, tool"
+course-of-action,investigates,indicator
+course-of-action,mitigates,"attack-pattern, indicator, malware, tool, vulnerability"
+identity,located-at,location
+indicator,indicates,"attack-pattern, campaign, infrastructure, intrusion-set, malware, threat-actor, tool"
+indicator,based-on,observed-data
+infrastructure,communicates-with,"infrastructure, ipv4-addr, ipv6-addr, domain-name, url"
+infrastructure,consists-of,"infrastructure, observed-data, <All STIX Cyber-observable Objects>"
+infrastructure,controls,"infrastructure, malware"
+infrastructure,delivers,malware
+infrastructure,has,vulnerability
+infrastructure,hosts,"tool, malware"
+infrastructure,located-at,location
+infrastructure,uses,infrastructure
+intrusion-set,attributed-to,threat-actor
+intrusion-set,compromises,infrastructure
+intrusion-set,"hosts, owns",infrastructure
+intrusion-set,originates-from,location
+intrusion-set,targets,"identity, location, vulnerability"
+intrusion-set,uses,"attack-pattern, infrastructure, malware, tool"
+malware,authored-by,"threat-actor, intrusion-set"
+malware,"beacons-to, exfiltrate-to",infrastructure
+malware,communicates-with,"ipv4-addr, ipv6-addr, domain-name, url"
+malware,controls,malware
+malware,"downloads, drops","malware, tool, file"
+malware,exploits,vulnerability
+malware,originates-from,location
+malware,targets,"identity, infrastructure, location, vulnerability"
+malware,uses,"attack-pattern, infrastructure, malware, tool"
+malware,variant-of,malware
+malware-analysis,characterizes,malware
+malware-analysis,analysis-of,malware
+malware-analysis,static-analysis-of,malware
+malware-analysis,dynamic-analysis-of,malware
+threat-actor,attributed-to,identity
+threat-actor,compromises,infrastructure
+threat-actor,"hosts, owns",infrastructure
+threat-actor,impersonates,identity
+threat-actor,located-at,location
+threat-actor,targets,"identity, location, vulnerability"
+threat-actor,located-at,location
+threat-actor,uses,"attack-pattern, infrastructure, malware, tool"
+tool,delivers,malware
+tool,drops,malware
+tool,has,vulnerability
+tool,targets,"identity, infrastructure, location, vulnerability"
